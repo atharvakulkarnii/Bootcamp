@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="sytlesheet" href="css/style.css">
+</head>
+<body>
+ <input id="input1" placeholder="enter the first number" type="number">
+ <input id="input2" placeholder="enter the second number" type="number">
+ <br> <br>
+ <input id="answer" placeholder="answer" type="text">
+ <br> <br>
+ <button id="btn1" onclick="add('1')"class="btn btn-info">click me</button>
+ <button onclick="add('2')"class="btn btn-success">refresh</button>
+ <h1 id="header">default value</h1>
+ <script
+ src="https://code.jquery.com/jquery-3.3.1.min.js"
+ integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+ crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.bundle.min.js"></script>
+<script>
+function add(test) {
+    if(test==1){
+    $('#header').html("you clicked click me");
+    }
+    if(test==2) {
+        $('#header').html("you clicked refresh")
+    }
+
+
+}
+   
+      
+</script>
+</body>
+</html>
